@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import FeedbackCounter from '../helpers/counters'
 
 export const BlocksHeader = () => {
     return (
@@ -30,9 +31,9 @@ export const BlocksHeader = () => {
                     <li><span><i class="fas fa-circle"></i></span> Live</li>
                 </ul>
                 <ul>
-                    <li>2</li>          
-                    <li>3</li>
-                    <li>1</li>
+                    <li>{FeedbackCounter('Planned')}</li>          
+                    <li>{FeedbackCounter('In-Progress')}</li>
+                    <li>{FeedbackCounter('Live')}</li>
                 </ul>
                 </div>
 
