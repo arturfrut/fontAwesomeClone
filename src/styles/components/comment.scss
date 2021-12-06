@@ -1,0 +1,30 @@
+.comment__header{
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    margin: 18px 0;
+    img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+    }
+}
+
+.comments__nameMail>h3{
+    color: $dark_blue;
+}
+
+.comment__reply{
+    color: $blue;
+    font-weight: 700;
+    text-align: right;
+}
+
+.comment__comment{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+.comments__textArea{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}

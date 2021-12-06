@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './styles/styles.scss'
+import { BrowserRouter,  Routes, Route } from 'react-router-dom';
 
-function App() {
+import { MainScreen } from './components/screens/MainScreen'
+import { AddScreen } from './components/screens/AddScreen';
+import { RoadmapScreen } from './components/screens/RoadmapScreen';
+import { NotFoundScreen } from './components/screens/NotFoundScreen';
+import { FeedbackScreen } from './components/screens/FeedbackScreen';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainScreen />} />
+            <Route path="Main" element={<MainScreen />} />
+            <Route path="Add" element={<AddScreen />} />
+            <Route path="Roadmap" element={<RoadmapScreen />} />
+            <Route path="*" element={<NotFoundScreen />} />
+            <Route path='Feedback' element={<FeedbackScreen />}>
+              <Route path=":invoiceId" element={<FeedbackScreen />} />
+            </Route>
+          </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
+

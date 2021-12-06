@@ -1,0 +1,82 @@
+.RoadmapGrid__columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 15px;
+}
+
+.RoadmapGrid__flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.RoadmapGrid__flex>p{
+    font-size: 85%;
+    margin-bottom: 15px;
+}
+
+.RoadmapGrid__card{
+    border: solid 6px;
+    border-color: $planned-dot $text_white $text_white $text_white ;
+    background-color: $text_white;
+    width: 250px;
+    height: 260px;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+.RoadmapGrid__card:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.01);
+}
+
+.RoadmapGrid__border-planned{
+    background-color: $planned-dot;
+    height: 6px;
+
+}
+
+.RoadmapGrid__card>p{
+    font-size: 80%;
+    margin: 12px 0;
+}
+
+.RoadmapGrid__card>p>i{
+    color: $planned-dot;
+    font-size: 60%;
+}
+
+.RoadmapGrid__card>h3{
+    margin-top: 10px;
+}
+
+.RoadmapGrid__card>button{
+    margin: 5px 0;
+}
+
+.RoadmapGrid__card-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px;
+}
+
+.RoadmapGrid__card-counter>p>i{
+    color: $blue;
+    font-size: 80%;
+}
+
+.RoadmapGrid__card-counter{
+    background-color: $light-bg;
+    height: 28px;
+    width: 55px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.RoadmapGrid__card-counter:hover{
+    transition: .2s;
+    background-color: $light-blue;
+}

@@ -1,0 +1,23 @@
+.suggestionBar__bar{
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 28px;
+    align-items: center;
+    margin: 16px 0;
+    background-color: $dark_blue;
+}
+
+.suggestionBar__bar-inside{
+    display: flex;
+    align-items: center;
+}
+
+.suggestionBar__p{
+    font-size: 93%;
+    margin-left: 50px;
+}
+.suggestionBar__p>span{
+    font-weight: 700;
+}

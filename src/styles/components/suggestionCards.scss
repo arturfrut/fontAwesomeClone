@@ -1,0 +1,48 @@
+.suggestionCards__card{
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    background-color: $text_white;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.suggestionCards__card:hover{
+    transition: .2s;
+    transform: scale(1.02)
+}
+
+.suggestionCards__comments-counter{
+    height: 55px;
+    width: 45px;
+    background-color: $light-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: $blue;
+}
+
+
+.suggestionCards__comments-counter:hover{
+    transition: .5s;
+    background-color: $light-blue;
+}
+
+.suggestionCards__card-center>p{
+    margin: 15px 0;
+}
+
+.suggestionCards__card-center>button{
+    margin: 0;
+}
+
+.suggestionCards__card-center>button:hover{
+    background-color: $light-bg;
+}
+
+.suggestionCards__card-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

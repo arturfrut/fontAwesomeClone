@@ -1,0 +1,70 @@
+.BlocksHeader__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.BlocksHeader__div{
+    height: 180px;
+    width: 225px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 1.6rem;
+}
+
+.BlocksHeader__colored-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    background-image: url('https://hopeful-murdock-83580e.netlify.app/img/background-header.254059f1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.BlocksHeader__div-tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+/*Third Block*/
+
+
+.BlocksHeader__div-roadmaps-head{
+    display: flex;
+    justify-content:space-between ;
+}
+
+.BlocksHeader__div-roadmaps-head>a{
+    font-size: 80%;
+}
+
+.BlocksHeader__div-roadmaps-list{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BlocksHeader__div-roadmaps-list >ul>li>span>i{
+    font-size: 50%;
+    transform: translate(0,-3px);
+}
+
+.BlocksHeader__div-roadmaps-list >ul>li:nth-child(1)>span{
+    color: $planned-dot;
+}
+.BlocksHeader__div-roadmaps-list >ul>li:nth-child(3)>span{
+    color: $in_progress-dot;
+}
+.BlocksHeader__div-roadmaps-list >ul>li:nth-child(2)>span{
+    color: $live-dot;
+}
+
+.BlocksHeader__div-roadmaps-list >ul:nth-child(2)>li{
+    font-weight: 500;
+}
