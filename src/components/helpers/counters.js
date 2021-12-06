@@ -7,9 +7,8 @@ let FeedbackCounter = (status) =>{
         if (comment.status === status){
             counter = counter + 1; 
         } 
-        return counter
-        
     });
+    return counter
 }
 
 export default FeedbackCounter

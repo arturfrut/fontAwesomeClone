@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import FeedbackCounter from '../helpers/counters'
 
 export const BlocksHeader = () => {
+    console.log(FeedbackCounter('Suggestion'))
     return (
         <header className = 'BlocksHeader__container'>
             <div className = 'BlocksHeader__div BlocksHeader__colored-block'>
@@ -21,14 +22,13 @@ export const BlocksHeader = () => {
             <div className = 'BlocksHeader__div BlocksHeader__div-roadmaps'>
                 <div className = 'BlocksHeader__div-roadmaps-head'>
                     <h2>Roadmap</h2>
-                    {/* Aca va un link */}
                     <Link to="/Roadmap">View</Link>
                 </div>
                 <div className = 'BlocksHeader__div-roadmaps-list' >
                 <ul>    
-                    <li><span><i class="fas fa-circle"></i></span> Planned</li>
-                    <li><span><i class="fas fa-circle"></i></span> In-progress</li>
-                    <li><span><i class="fas fa-circle"></i></span> Live</li>
+                    <li><span><i className="fas fa-circle"></i></span> Planned</li>
+                    <li><span><i className="fas fa-circle"></i></span> Live</li>
+                    <li><span><i className="fas fa-circle"></i></span> In-progress</li>
                 </ul>
                 <ul>
                     <li>{FeedbackCounter('Planned')}</li>          
